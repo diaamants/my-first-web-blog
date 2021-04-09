@@ -1,0 +1,128 @@
+section {
+    margin: 0;
+    padding: 120px 0 0 0; 
+}
+
+.about, .fitness, .fit-plan, .choose, .beauty-mind, .mode {
+    max-width: 84%;
+    margin: auto auto;
+    align-content: center;
+    background: #f4ece9;
+    padding: 70px 20px;
+    border-radius: 70px;
+}
+
+.flexbox {
+    display: flex;
+    font-size: 22px;
+    text-align: center;
+    justify-content: center; 
+}
+
+.rowflex, .rowflexreverse {
+    display: flex;
+    flex-wrap: wrap;  
+}
+
+.rowflex {
+    flex-direction: row;
+}
+
+.rowflexreverse { 
+    flex-direction: row-reverse;
+}
+
+
+.rowflex img {
+    margin-top: 15px;
+}
+
+.rowflexreverse img {
+    margin-top: 30px;
+}
+
+.rowflex a, .rowflexreverse a {
+    flex: 1;
+    min-width: 300px;
+    max-width: 400px;
+}
+
+.rowflex div, .rowflexreverse div {
+    min-width: 400px;
+    flex: 2;
+}
+
+.fitness .rowflexreverse div {
+    margin-right: 2%;
+}
+
+.rowflex div {
+    margin-left: 2%;
+}
+
+@media screen and (max-width: 920px) {
+    .rowflexreverse a, .rowflex a  {
+        max-width: 450px;   
+    }
+    .rowflexreverse, .rowflex {
+        justify-content: center;
+    }  
+}
+
+@media screen and (max-width: 735px) {
+    .flexbox {
+        flex-direction: column;
+    }
+    .rowflexreverse div, .rowflex div {
+        margin: 0;
+    }
+}
+
+    
+@media screen and (max-width: 490px) {
+    .about, .fitness, .fit-plan, .choose, .beauty-mind, .mode {
+        max-width: 92%;
+        border-radius: 45px;
+    }
+    .rowflexreverse div, .rowflex div {
+        min-width: 200px;
+    }
+}
+
+
+@media screen and (max-width: 380px) {
+    .rowflex a, .rowflexreverse a {
+        min-width: 200px;
+    }
+}
+
+
+/* ABOUT */
+.about h2 {
+    padding-top: 1%;
+    font-size: 25px;
+    margin: 2%;
+}
+
+@media screen and (max-width: 1050px) {
+    .about div:nth-child(1) {
+        height: auto;
+    }
+
+}
+
+@media screen and (max-width: 920px) {   
+    .about h2 {
+        text-align: center;
+        margin-top: 8%;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .about h2 {
+        font-size: 19px;
+    }
+}
+
+
+
